@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alarm-summarizer"
+version = "0.1.0"
+description = "De-duplicate, correlate, and summarize telecom network alarms with Claude, with a deterministic offline fallback."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "yousaf885" }]
+keywords = ["telecom", "noc", "alarms", "correlation", "summarization", "claude", "anthropic"]
+
+dependencies = [
+    "anthropic>=1.0",
+    "pydantic>=2.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+alarm-summary = "alarm_summarizer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

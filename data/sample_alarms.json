@@ -1,0 +1,20 @@
+[
+  { "id": "A1", "timestamp": "2026-11-24T08:00:05Z", "node": "ABV-0117", "alarmType": "MainsFailure", "perceivedSeverity": "critical", "probableCause": "powerProblem", "additionalText": "AC mains input lost" },
+  { "id": "A2", "timestamp": "2026-11-24T08:00:20Z", "node": "ABV-0117", "alarmType": "RectifierFault", "perceivedSeverity": "major", "probableCause": "powerProblem", "additionalText": "Rectifier module 2 not supplying" },
+  { "id": "A3", "timestamp": "2026-11-24T08:01:10Z", "node": "ABV-0117", "alarmType": "BatteryDischarging", "perceivedSeverity": "major", "probableCause": "powerProblem", "additionalText": "On battery, ~3h autonomy" },
+  { "id": "A4", "timestamp": "2026-11-24T08:02:00Z", "node": "ABV-TX-01", "alarmType": "LinkDown", "perceivedSeverity": "critical", "probableCause": "powerProblem", "managedObject": "eth-0/1", "additionalText": "Microwave link to ABV-0117 lost" },
+
+  { "id": "B1", "timestamp": "2026-11-24T07:55:00Z", "node": "KAN-0088", "alarmType": "HighBER", "perceivedSeverity": "minor", "probableCause": "transmissionError", "managedObject": "mw-1", "additionalText": "Bit error rate elevated" },
+  { "id": "B2", "timestamp": "2026-11-24T07:56:00Z", "node": "KAN-0088", "alarmType": "HighBER", "perceivedSeverity": "minor", "probableCause": "transmissionError", "managedObject": "mw-1" },
+  { "id": "B3", "timestamp": "2026-11-24T07:57:00Z", "node": "KAN-0088", "alarmType": "HighBER", "perceivedSeverity": "minor", "probableCause": "transmissionError", "managedObject": "mw-1" },
+
+  { "id": "C1", "timestamp": "2026-11-24T06:10:00Z", "node": "LGOS-0423", "alarmType": "CellOutOfService", "perceivedSeverity": "major", "managedObject": "cell-12", "additionalText": "Sector down" },
+  { "id": "C2", "timestamp": "2026-11-24T06:11:00Z", "node": "LGOS-0423", "alarmType": "CellOutOfService", "perceivedSeverity": "cleared", "managedObject": "cell-12" },
+  { "id": "C3", "timestamp": "2026-11-24T06:20:00Z", "node": "LGOS-0423", "alarmType": "CellOutOfService", "perceivedSeverity": "major", "managedObject": "cell-12" },
+  { "id": "C4", "timestamp": "2026-11-24T06:21:00Z", "node": "LGOS-0423", "alarmType": "CellOutOfService", "perceivedSeverity": "cleared", "managedObject": "cell-12" },
+  { "id": "C5", "timestamp": "2026-11-24T06:30:00Z", "node": "LGOS-0423", "alarmType": "CellOutOfService", "perceivedSeverity": "major", "managedObject": "cell-12" },
+
+  { "id": "D1", "timestamp": "2026-11-24T09:15:00Z", "node": "IBD-0331", "alarmType": "HighTemperature", "perceivedSeverity": "warning", "probableCause": "temperatureUnacceptable", "additionalText": "Shelter 42C, HVAC degraded" },
+
+  { "id": "E1", "timestamp": "2026-11-24T05:00:00Z", "node": "OSS-APP-02", "alarmType": "DiskSpaceLow", "perceivedSeverity": "cleared", "probableCause": "storageCapacityProblem", "additionalText": "Disk usage back to normal" }
+]
